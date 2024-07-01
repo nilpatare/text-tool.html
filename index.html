@@ -57,5 +57,26 @@
             <button class="btn" onclick="charCount()">Charecter Count</button>
             <button class="btn" onclick="wordCount()">Word Count</button>
         </div>
+
+        <script>
+        const inputElement = document.getElementById("input-text")
+        const resultElement = document.getElementById("result-text")
+
+            function makeUppercase(){
+                resultElement.innerText = inputElement.value.toUpperCase()
+            }
+    
+            function makeLowercase(){
+                resultElement.innerText = inputElement.value.toLowerCase()
+            }
+    
+            function charCount(){
+                resultElement.innerText = `Total Characters: ${inputElement.value.length}`
+            }
+    
+            function wordCount(){
+                resultElement.innerText = `Total Words: ${inputElement.value.split(" ").length}`
+            }
+        </script>
 </body>
 </html>
